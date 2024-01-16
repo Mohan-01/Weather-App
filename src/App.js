@@ -20,7 +20,7 @@ function App() {
             try {
 
             const apiData = await axios.get(
-              `http://api.weatherstack.com/current?access_key=5e574d1902ed12888f569c2a9254c846&query=${e.target.input.value}`
+              `https://api.weatherstack.com/current?access_key=5e574d1902ed12888f569c2a9254c846&query=${e.target.input.value}`
             );
 
             console.log({apiData});
