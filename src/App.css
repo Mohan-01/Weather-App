@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
   font-size: 1.2em;
   background-color: #282c34;
+  position: relative;
 }
 
 .logo {
@@ -39,12 +43,15 @@ input {
   padding: 1em;
   border-radius: 4px;
   outline: 0;
-  font-size: .7em;
+  font-size: 0.7em;
+  color-scheme: dark;
+  border: none;
+  border-bottom: 1px solid white;
 }
 
 input:focus {
   border: 0;
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid white;
   background: transparent;
   color: white;
 }
@@ -66,6 +73,7 @@ button {
   font-size: 0.6em;
   border: 0;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 button:hover {
@@ -74,7 +82,7 @@ button:hover {
   color: rgb(77, 255, 0);
   font-size: 0.55em;
   font-weight: 600;
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
 }
 
 .highlight {
@@ -84,4 +92,10 @@ button:hover {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    flex-direction: column-reverse;
+  }
 }
