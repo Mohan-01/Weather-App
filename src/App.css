@@ -1,11 +1,18 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+body {
+  overflow: hidden;
 }
 .App {
   text-align: center;
   font-size: 1.2em;
   background-color: #282c34;
   position: relative;
+  border: none;
+  padding: 1em;
 }
 
 .logo {
